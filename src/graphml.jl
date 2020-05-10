@@ -1,3 +1,6 @@
+###############################################################################
+# some of the code is based on GraphML.jl
+
 function str2value(t, v)
     if t=="string"
         return string(v)
