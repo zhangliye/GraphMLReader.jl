@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="numofnode" attr.type="string" for="edge" id="d8" />
+  <key attr.name="zoneid" attr.type="string" for="edge" id="d7" />
+  <key attr.name="roadname" attr.type="string" for="edge" id="d6" />
+  <key attr.name="lanenum" attr.type="string" for="edge" id="d5" />
+  <key attr.name="edgetype" attr.type="string" for="edge" id="d4" />
+  <key attr.name="edgeid" attr.type="string" for="edge" id="d3" />
+  <key attr.name="distance" attr.type="double" for="edge" id="d2" />
+  <key attr.name="longitude" attr.type="double" for="node" id="d1" />
+  <key attr.name="latitude" attr.type="double" for="node" id="d0" />
+
+  <graph id="G" edgedefault="directed">
+    <node id="n0"/>
+    <node id="7500">
+      <data key="d0">1.35838787819</data>
+      <data key="d1">103.838093451</data>
+    </node>
+    <node id="7501">
+      <data key="d0">1.35838787819</data>
+      <data key="d1">103.838093451</data>
+    </node>
+    <node id="n1"/>
+
+    <edge id="e1" source="n0" target="n1"/>
+    <edge source="7500" target="7501">
+      <data key="d2">87.7572767072</data>
+      <data key="d3">106003419</data>
+      <data key="d4">NCAT</data>
+      <data key="d5">1</data>
+      <data key="d6">UPPER THOMSON ROAD SERVICE ROAD</data>
+      <data key="d7">3</data>
+      <data key="d8">2</data>
+    </edge>
+  </graph>
+</graphml>
