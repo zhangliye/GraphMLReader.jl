@@ -121,5 +121,5 @@ function loadgraphml(file::String, gname::String="")
             end
         end
     end
-    error("Graph $gname not found")
+    error("Graph name $graphname is missed from the input parameter. Please set.")
 end
