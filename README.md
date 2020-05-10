@@ -4,7 +4,7 @@ Read GraphML file to a MetaGraph.
 Load GraphML file to a MetaGraph object
 ```
 file_path = joinpath( "data/large_traffic_network.graphml" )
-g = loadgraphml( file_path ) # return a MetaGraph object
+G = loadgraphml( file_path ) # return a MetaGraph object
 ```
 
 Get the attributes of the nodes
@@ -13,7 +13,8 @@ node_fields(G)
 ```
 
 Get the attribute of the edges
-```edge_fields(G)
+```
+edge_fields(G)
 ```
 
 Get the dict of the old id 
