@@ -3,7 +3,7 @@ Read GraphML file to a MetaGraph.
 
 # What GraphMLRead.jl does?
 Step1: Read the xml file.  
-Step2: Create an MetaGraph/MetDiGrap and add vertice in creasing order with Int vertice ID. Save the original id of the vertice to node attribute `:original_id`.       
+Step2: Create a MetaGraph/MetDiGrap and add vertice in ascending order with `Int` vertice ID. Save the original id of the vertice to node attribute `:original_id`.       
 Step3: Save vertice attribtes and edge attributes to MetaGraph/MetaGraph. 
 
 # How to use
