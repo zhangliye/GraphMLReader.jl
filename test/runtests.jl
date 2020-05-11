@@ -1,7 +1,9 @@
 using GraphMLReader
+using LightGraphs
+using MetaGraphs
+using JSON
+using BenchmarkTools
 
-file_path = joinpath( dirname( @__DIR__ ), "data/small.graphml" )
-g = loadgraphml(file_path, "G")
-
-file_path = joinpath( dirname( @__DIR__ ), "data/large_traffic_network.graphml" )
-g = loadgraphml( file_path )
+# include("test_readfile.jl")
+include("test_lightgraphs.jl")
+# include("test_staticgraphs.jl")
