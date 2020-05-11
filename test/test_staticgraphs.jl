@@ -15,6 +15,7 @@ static_G = StaticDiGraph(G.graph)
 w_adj = adjacency_matrix( static_G )
 w_static = deepcopy(w_adj)
 w_static = convert(SparseMatrixCSC{Float64,UInt32}, w_static)
+I, J, V = findnz(w_adj)
 for v in collect(zip(I,J))
     i,j = Int(v[1]), Int(v[2])
     w_static[i,j] = w[i,j]
