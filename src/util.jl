@@ -56,7 +56,9 @@ function edge_fields(G)
     return fields 
 end
 
-""" get dict of {:orginal_id=>current_id}
+""" 
+
+get dict of {:orginal_id=>current_id}.
 """
 function gmlid2metaid(G) . 
     ids = Dict{String, Int}()
