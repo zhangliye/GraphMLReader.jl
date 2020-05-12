@@ -1,7 +1,7 @@
 ## load graphml file to MetaGraph Object
 file_path = joinpath( dirname( @__DIR__ ), "data/large_traffic_network.graphml" )
 G = GraphMLReader.loadgraphml( file_path );
-ids = id_dict(G)
+ids = gmlid2metaid(G)
 weightfield!(G, :length)
 w = weights(G)
 

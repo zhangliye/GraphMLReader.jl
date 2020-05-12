@@ -6,7 +6,7 @@ using MetaGraphs
 export loadgraphml,
     node_fields, edge_fields,
     check_node_fields, check_edge_fields,
-    id_dict
+    gmlid2metaid
 
 include("graphml.jl")
 include("util.jl")

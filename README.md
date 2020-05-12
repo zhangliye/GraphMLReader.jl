@@ -19,7 +19,7 @@ edge_fields(G)
 
 Get the dict of the old id 
 ```
-ids = id_dict(G) #{od_id=>new_id, ...}
+ids = gmlid2metaid(G) #{od_id=>new_id, ...}
 ```
 
 # benchmark of the shortest path 
