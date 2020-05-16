@@ -60,7 +60,7 @@ end
 
 get dict of {:orginal_id=>current_id}.
 """
-function gmlid2metaid(G) . 
+function gmlid2metaid(G) 
     ids = Dict{String, Int}()
     for v in vertices(G)
         ids[ props(G, v)[:original_id] ] = v
