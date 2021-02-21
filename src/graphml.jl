@@ -6,6 +6,8 @@ function str2value(t, v)
         return string(v)
     elseif t=="double" || t=="long"
         return parse(Float64, string(v))
+    elseif t=="int"
+        return parse(Int, string(v))
     else
         error( "Type error: type not found. " * t )
     end
