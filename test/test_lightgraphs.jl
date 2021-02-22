@@ -1,14 +1,14 @@
 
 @testset "file loader" begin
     #"load graphml file to MetaGraph Object" begin
-    file_path = "data/large_traffic_network.graphml"
+    file_path = "test_data/large_traffic_network.graphml"
     G = GraphMLReader.loadgraphml(file_path);
     ids = gmlid2metaid(G)
     weightfield!(G, :length)
     w = weights(G)
 
     #"shortest path of 20 original vertices" begin
-    file_path = "data/origin.json"
+    file_path = "test_data/origin.json"
     origin_ids = JSON.parsefile(file_path)
     
     ts = []

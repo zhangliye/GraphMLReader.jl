@@ -1,13 +1,13 @@
 @testset "static graph speed test" begin
     ## load graphml file to MetaGraph Object
-    file_path = joinpath( "data/large_traffic_network.graphml" )
+    file_path = joinpath( "test_data/large_traffic_network.graphml" )
     G = GraphMLReader.loadgraphml( file_path );
     ids = gmlid2metaid(G)
     weightfield!(G, :length)
     w = weights(G)
 
     ## load test original vertices IDs
-    file_path = "data/origin.json"
+    file_path = "test_data/origin.json"
     origin_ids = JSON.parsefile(file_path)
     origin_ids
 
