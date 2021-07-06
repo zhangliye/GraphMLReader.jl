@@ -10,4 +10,11 @@ JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 LightGraphs = "093fc24a-ae57-5d10-9952-331d41423f4d"
 MetaGraphs = "626554b9-1ddb-594c-aa3c-2596fe9399a5"
 Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+
+[extras]
+StaticGraphs = "4c8beaf5-199b-59a0-a7f2-21d17de635b6"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+
+[targets]
+test = ["StaticGraphs", "Test", "SparseArrays"]
